@@ -5,11 +5,11 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 80vh;
+    height: 100vh; /* Set height to 100vh to cover the entire viewport vertically */
     overflow: auto;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     font-family: 'Poppins', sans-serif;
 }
@@ -22,4 +22,22 @@ body {
     font-weight: bold;
     color: white;
     
+}
+#startButton {
+    width: 100px;
+    height: 90px;
+    background-color: #e2264d; /* Heart color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50% 50% 50% 0;
+    position: relative;
+    top: -10px;
+    transform: rotate(-45deg);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#startButton:hover {
+    background-color: #c02041; /* Darker color on hover */
 }
