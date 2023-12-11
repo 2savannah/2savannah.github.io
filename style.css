@@ -31,7 +31,7 @@ body {
     padding: 15px 30px;
     font-size: 18px;
     color: #fff;
-    background-color: #e2264d;
+    background-color: #ff69b4; /* Pink color */
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -39,5 +39,5 @@ body {
 }
 
 #startButton:hover {
-    background-color: #c02041;
+    background-color: #e040a2; /* Darker pink on hover */
 }
