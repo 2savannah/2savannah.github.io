@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const delay = 38;
   const lyricsElement = document.getElementById("lyrics");
-  const startButton = document.getElementById("startButton");
   const audio = new Audio('sound.mp3'); // replace with the path to your audio file
 
   function displayLyrics() {
@@ -38,8 +37,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 
-  startButton.addEventListener("click", async () => {
-    startButton.style.display = "none"; // Hide the button after clicking
-    await displayLyrics();
-  });
+  displayLyrics();
 });
