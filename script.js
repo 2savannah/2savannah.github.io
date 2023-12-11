@@ -17,25 +17,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const lyricsElement = document.getElementById("lyrics");
   const audio = new Audio('sound.mp3'); // replace with the path to your audio file
 
-  function displayLyrics() {
-      return new Promise(async (resolve) => {
-          audio.play();
-          for (const line of lyrics) {
-              for (const char of line) {
-                  lyricsElement.textContent += char;
-                  await new Promise((charResolve) => setTimeout(charResolve, delay));
-              }
-
-              lyricsElement.innerHTML += "<br>";
-
-              await new Promise((lineResolve) => setTimeout(lineResolve, delay * 10));
-
-              lyricsElement.innerHTML = "";
-              await new Promise((emptyResolve) => setTimeout(emptyResolve, delay * 10));
+  
+  async function displayLyrics() {
+      audio.play();
+      for (const line of lyrics) {
+          for (const char of line) {
+              lyricsElement.textContent += char;
+              await new Promise((resolve) => setTimeout(resolve, delay));
           }
-          resolve();
-      });
+
+          lyricsElement.innerHTML += "<br>";
+
+          await new Promise((resolve) => setTimeout(resolve, delay * 10));
+
+          lyricsElement.innerHTML = "";
+
+          await new Promise((resolve) => setTimeout(resolve, delay * 10));
+      }
   }
 
-  displayLyrics();
+    displayLyrics();
 });
