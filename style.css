@@ -3,9 +3,10 @@
 body {
     background-image: url('video.gif');
     background-size: cover;
+    background-position: center center;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Set height to 100vh to cover the entire viewport vertically */
+    height: 100vh;
     overflow: auto;
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@ body {
     position: relative;
     font-family: 'Poppins', sans-serif;
 }
+
 
 .text h1 {
     margin: -10%;
@@ -23,21 +25,19 @@ body {
     color: white;
     
 }
+
+
 #startButton {
-    width: 100px;
-    height: 90px;
-    background-color: #e2264d; /* Heart color */
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e2264d;
     border: none;
-    border-radius: 50% 50% 50% 0;
-    position: relative;
-    top: -10px;
-    transform: rotate(-45deg);
+    border-radius: 8px;
+    cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 #startButton:hover {
-    background-color: #c02041; /* Darker color on hover */
+    background-color: #c02041;
 }
