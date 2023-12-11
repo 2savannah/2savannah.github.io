@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "like I know I could to you."
   ];
 
-  const delay = 40;
+  const delay = 38;
   const lyricsElement = document.getElementById("lyrics");
   const startButton = document.getElementById("startButton");
   const audio = new Audio('sound.mp3'); // replace with the path to your audio file
