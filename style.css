@@ -28,12 +28,13 @@ body {
 
 
 #startButton {
-    padding: 15px 30px;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
     font-size: 18px;
     color: #fff;
     background-color: #ff69b4; /* Pink color */
     border: none;
-    border-radius: 8px;
+    border-radius: 50%; /* Make it a circle */
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
