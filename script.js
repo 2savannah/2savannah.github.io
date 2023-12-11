@@ -1,16 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     const lyrics = [
-        "Kissing, I hope they caught us",
-        "Whether they like or not",
-        "I wanna show you off",
-        "I wanna show you off",
-        "I wanna brag about it",
-        "I wanna tie the knot",
-        "I wanna show you off"
+        "How do I make you like me",
+        "How do I make you have the same feeling I do",
+        "Like I want to know everything about you",
+        "and be around you all the time",
+        "How do I tell you I want that",
+        "and not scare you away already",
+        "Because I know we are nearly strangers",
+        "I don't know you",
+        "but GOD, I want to",
+        "How do I make you like me",
+        "like I know I could to you."
 
     ];
 
-    const delay = 33; 
+    const delay = 40; 
     const lyricsElement = document.getElementById("lyrics");
 
 
@@ -33,5 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     displayLyrics();
 });
+
+
 
 
