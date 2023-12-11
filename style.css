@@ -30,15 +30,15 @@ body {
 #startButton {
     width: 50px; /* Adjust the width as needed */
     height: 50px; /* Adjust the height as needed */
-    background: url('button.png') center/cover; /* Replace 'local-image.jpg' with your image file */
+    font-size: 10px;
+    color: #fff;
+    background-color: #ff69b4; /* Pink color */
     border: none;
-    border-radius: 10px; /* Adjust the border-radius for a rounded appearance */
+    border-radius: 50%; /* Make it a circle */
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #startButton:hover {
-    transform: scale(1.1); /* Add a slight zoom effect on hover */
+    background-color: #e040a2; /* Darker pink on hover */
 }
