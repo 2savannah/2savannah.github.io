@@ -13,27 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
       "like I know I could to you."
   ];
 
-  const delay = 38;
-  const lyricsElement = document.getElementById("lyrics");
-  const audio = new Audio('sound.mp3'); 
-  
-  async function displayLyrics() {
-      audio.play();
-      for (const line of lyrics) {
-          for (const char of line) {
-              lyricsElement.textContent += char;
-              await new Promise((resolve) => setTimeout(resolve, delay));
-          }
+  const delay =38;
+  const audio = new Audio('sound.mp3'); // replace with the path to your audio file
 
-          lyricsElement.innerHTML += "<br>";
+  function displayLyrics() {
+    return new Promise(async (resolve) => {
+        audio.play();
+        for (const line of lyrics) {
+            document.body.textContent += line + '\n';
+            await new Promise((resolve) => setTimeout(resolve, delay));
+        }
+        resolve();
+    });
+}
 
-          await new Promise((resolve) => setTimeout(resolve, delay * 10));
-
-          lyricsElement.innerHTML = "";
-
-          await new Promise((resolve) => setTimeout(resolve, delay * 10));
-      }
-  }
-  
-  displayLyrics();
+    displayLyrics();
 });
