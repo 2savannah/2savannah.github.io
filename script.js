@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const delay = 38;
   const lyricsElement = document.getElementById("lyrics");
-  const audio = new Audio('sound.mp3'); // replace with the path to your audio file
-
+  const audio = new Audio('sound.mp3'); 
   
   async function displayLyrics() {
       audio.play();
@@ -35,6 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
           await new Promise((resolve) => setTimeout(resolve, delay * 10));
       }
   }
-
-    displayLyrics();
+  
+  displayLyrics();
 });
